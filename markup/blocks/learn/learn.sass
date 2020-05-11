@@ -1,0 +1,82 @@
+.learn
+  &__container
+    padding-top: 146px
+    padding-bottom: 33px
+    color: $title-color-2
+    +r($medium)
+      padding-top: (146px / 2)
+
+  &__title
+    margin-bottom: 114px
+    text-align: center
+    +r($medium)
+      margin-bottom: (114px / 2)
+      text-align: left
+
+  &__list
+    padding-right: 48px
+    padding-left: 48px
+    flex-wrap: wrap
+    justify-content: space-between
+    +r($large)
+      justify-content: flex-start
+    +r($medium)
+      padding-right: 0
+      padding-left: 0
+  &__item
+    margin-bottom: 78px
+    max-width: 33.3%
+    width: 100%
+    +r($large)
+      max-width: 50%
+    +r($medium)
+      margin-bottom: (78px / 2)
+      max-width: 100%
+
+    // &:nth-child(1)
+    //   max-width: 284px
+
+    &:nth-child(2)
+      padding-left: 106px
+      +r($xlarge)
+        padding-left: 0
+
+    &:nth-child(3)
+      padding-left: 213px
+      +r($xlarge)
+        padding-left: 0
+
+    &:nth-child(4)
+      padding-left: 270px
+      // max-width: 50%
+      max-width: 40%
+      +r($xlarge)
+        padding-left: 0
+      +r($medium)
+        max-width: 100%
+
+    &:nth-child(5)
+      padding-left: 10px
+      // max-width: 50%
+      max-width: 40%
+      +r($xlarge)
+        padding-left: 0
+      +r($medium)
+        max-width: 100%
+
+  &__icon
+    margin-bottom: 10px
+    display: block
+    // source,
+    // img
+
+  &__item-title
+    margin-bottom: 16px
+    font-size: 24px
+    font-weight: 900
+    line-height: 1.2
+
+  &__text
+    line-height: 1.4
+
+

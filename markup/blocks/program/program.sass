@@ -1,0 +1,134 @@
+.program
+  position: relative
+  color: $title-color-2
+  &__bg
+    position: absolute
+    right: 0
+    bottom: -657px
+    width: 167px
+    height: 1420px
+    +r($large)
+      display: none
+
+  &__container
+    padding-top: 119px
+    padding-bottom: 113px
+    text-align: center
+    +r($medium)
+      padding-top: (119px / 2)
+      padding-bottom: (113px / 2)
+
+  &__title
+    margin-bottom: 88px
+    +r($medium)
+      margin-bottom: (88px / 2)
+  &__w
+    margin: auto
+    max-width: 1265px
+    width: 100%
+    flex-wrap: wrap
+    justify-content: space-between
+    counter-reset: program
+    +r($medium)
+      max-width: 100%
+
+  &__w_limited
+    .program__item
+      &:nth-child(n + 3)
+        display: none
+
+  &__item
+    margin-bottom: 81px
+    max-width: 50%
+    width: 100%
+    text-align: left
+    color: $title-color-2
+    +r($medium)
+      margin-bottom: (81px / 2)
+      max-width: 100%
+    &:nth-child(2n)
+      margin-right: -96px
+      +r($medium)
+        margin-right: 0
+        max-width: 100%
+
+
+  &__item-title
+    margin-bottom: 38px
+    font-size: 30px
+    font-weight: 900
+
+
+  &__num
+    position: relative
+    margin-left: 10px
+    &:after
+      counter-increment: program
+      content: "0" counter(program)
+      color: #f4f4f4
+      font-size: 210px
+      font-weight: 900
+      +r($medium)
+        font-size: (210px / 2)
+
+    &:before
+      position: absolute
+      top: 50%
+      left: -12px
+      content: ''
+      width: 67px
+      height: 8px
+      background-color: #fcbb03
+      transform: translateY(-50%)
+
+
+  &__list
+    margin-bottom: 45px
+    margin-left: 4px
+    padding-right: 60px
+
+  &__list-item
+    position: relative
+    margin-bottom: 9px
+    padding-left: 23px
+    font-size: 18px
+    line-height: 1.4
+    &:before
+      content: ''
+      position: absolute
+      top: 7px
+      left: 0
+      width: 7px
+      height: 7px
+      background-color: #fcbb03
+
+    ul
+      margin-top: 5px
+
+    li
+      margin-bottom: 10px
+
+  &__summary
+    margin-left: 8px
+    line-height: 1.333
+
+  &__summary-title
+    margin-bottom: 24px
+    font-weight: 900
+
+  // &__summary-text
+
+
+  &__more
+    margin-top: 84px
+    padding-top: 24px
+    padding-right: 60px
+    padding-bottom: 24px
+    padding-left: 60px
+    height: 74px
+    font-size: 18px
+    +r($medium)
+      margin-top: (84px / 2)
+      height: auto
+
+

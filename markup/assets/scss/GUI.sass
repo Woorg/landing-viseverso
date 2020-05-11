@@ -1,0 +1,130 @@
+.flex
+  display: flex
+.flex_start
+  justify-content: flex-start
+.flex_center
+  justify-content: center
+.flex_top
+  align-items: flex-start
+.flex_vertical
+  align-items: center
+.flex_bottom
+  align-items: flex-end
+
+.title
+  color: $title-color
+  font-family: $g
+  font-size: 55px
+  font-weight: 900
+  +r($medium)
+    font-size: 41px
+
+.title_regular
+  color: $title-color-2
+  font-size: 50px
+  +r($medium)
+    font-size: 39px
+
+.button
+  +resetbutton()
+  padding-top: 18px
+  padding-right: 40px
+  padding-bottom: 21px
+  padding-left: 40px
+  display: inline-block
+  vertical-align: top
+  background-color: $button-bg
+  color: $button-color
+  font-size: 15px
+  font-weight: 500
+  text-decoration: none
+  border-radius: 10px
+  box-shadow: 0 11px 16px rgba(40, 40, 40, 0.14)
+  +r($medium)
+    padding-bottom: 18px
+    font-size: 14px
+
+  &:hover
+    background-color: darken($button-bg, 05)
+    +tr(all .3s ease)
+
+.button_shine
+  position: relative
+  justify-content: center
+  align-items: center
+  cursor: pointer
+  overflow: hidden
+  +tr(.3s ease)
+  &:before
+    content: ""
+    display: block
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    background: #fa4923
+    opacity: 0
+    z-index: 1
+    +tr(.3s ease)
+
+  &:after
+    content: ""
+    z-index: 1
+    position: absolute
+    top: -150px
+    left: -40px
+    margin-left: 60px
+    display: block
+    width: 30px
+    height: 300px
+    background: #fff
+    transform: rotate(45deg)
+    transition: all 0.1s
+    animation-name: slideme
+    animation-duration: 3s
+    animation-delay: 0.05s
+    animation-timing-function: ease-in-out
+    animation-iteration-count: infinite
+
+
+.wysiwyg
+  h2
+  font-size: 24px
+  line-height: 1.333
+  +mq($small)
+    font-size: 48px
+    line-height: 1.166
+
+  p
+    margin-bottom: 16px
+    font-size: 14px
+    line-height: 1.428
+    &:last-of-type
+      margin-bottom: 24px
+    +mq($small)
+      margin-bottom: 40px
+      font-size: 18px
+
+  i
+    font-size: 14px
+    line-height: 1.428
+    font-style: italic
+
+    +mq($small)
+      font-size: 24px
+      line-height: 1.333
+
+@-webkit-keyframes slideme
+  0%
+    left: -30px
+    margin-left: 0px
+
+  30%
+      left: 110%
+      margin-left: 80px
+
+  100%
+      left: 100%
+      margin-left: 80px
+
