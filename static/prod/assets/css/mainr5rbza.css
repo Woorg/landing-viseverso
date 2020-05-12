@@ -881,7 +881,7 @@ img {
   left: 50%;
   right: auto;
   bottom: auto;
-  background-image: url(../images/png-sprite/96dpi/spritemytffq.png);
+  background-image: url(../images/png-sprite/96dpi/spriter5rbza.png);
   background-position: 0px 0px;
   width: 52px;
   height: 36px;
@@ -893,13 +893,13 @@ img {
 
 @media screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-device-pixel-ratio: 2) {
   .video__button {
-    background-image: url(../images/png-sprite/192dpi/spritemytffq.png);
+    background-image: url(../images/png-sprite/192dpi/spriter5rbza.png);
   }
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx), only screen and (min-device-pixel-ratio: 3) {
   .video__button {
-    background-image: url(../images/png-sprite/288dpi/spritemytffq.png);
+    background-image: url(../images/png-sprite/288dpi/spriter5rbza.png);
   }
 }
 
@@ -1252,7 +1252,7 @@ img {
   top: 50%;
   right: 0;
   content: '';
-  background-image: url(../images/png-sprite/96dpi/spritemytffq.png);
+  background-image: url(../images/png-sprite/96dpi/spriter5rbza.png);
   background-position: -56px 0px;
   width: 22px;
   height: 18px;
@@ -1264,13 +1264,13 @@ img {
 
 @media screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-device-pixel-ratio: 2) {
   .format__list-item:after {
-    background-image: url(../images/png-sprite/192dpi/spritemytffq.png);
+    background-image: url(../images/png-sprite/192dpi/spriter5rbza.png);
   }
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx), only screen and (min-device-pixel-ratio: 3) {
   .format__list-item:after {
-    background-image: url(../images/png-sprite/288dpi/spritemytffq.png);
+    background-image: url(../images/png-sprite/288dpi/spriter5rbza.png);
   }
 }
 
@@ -1381,6 +1381,14 @@ img {
 .format__available span {
   font-weight: 500;
   color: #272727;
+}
+
+.popup {
+  position: relative;
+  margin: auto;
+  max-width: 425px;
+  border-radius: 10px;
+  background: #fff;
 }
 
 .page {
