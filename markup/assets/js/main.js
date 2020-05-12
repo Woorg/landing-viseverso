@@ -86,6 +86,14 @@ import svg4everybody from 'svg4everybody';
     });
 
 
+
+    // Popup
+
+    $('.open-popup').magnificPopup({
+      type: 'inline',
+      // preloader: false,
+    });
+
     // let $hButton = $('.h-user__button');
     // let $hList = $('.h-user__list');
 
